@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#If statement to open an app or install an app if it doesn't already exists
+which htop
+program=htop
+
+# command -v is used to check if a program exists 
+if command -v $program
+then
+    echo "$command is available, let's run it..."
+else
+    echo "$command is not available, installing $program now..."
+    sudo apt update && sudo apt install -y $program
+fi
+# The && is used chain commands, -y is used to assume yes and no need for user input
+$program
