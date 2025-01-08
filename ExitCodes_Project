@@ -1,0 +1,17 @@
+#!/bin/bash
+
+directory=/notexist
+#directory=/etc
+
+if [ -d $directory ]
+then
+    echo "The directory $directory exists."
+    exit  #this stops running and exit here because it's successful
+else
+    echo "The directory $directory doesn't exists."
+    exit  #this works because above is unsuccessful and stops here.
+fi
+
+echo "The exit code for this script run is $?"
+
+#Always do extra testing when working with exit  codes and always put exit code in the proper checking spot

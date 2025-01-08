@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#location=~/Boring_Stuffs/Bash/Variables.sh
+location=~/Boring_Stuffs/Bash/Variables
+
+while [ -f $location ]
+do
+    echo "As of $(date), the test file exist."
+    sleep 10
+done
+echo "As of $(date), the test file is missing."

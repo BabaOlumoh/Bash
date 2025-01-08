@@ -1,0 +1,28 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Installing:
+  htop
+
+Suggested packages:
+  strace
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 262
+  Download size: 156 kB
+  Space needed: 474 kB / 14.9 GB available
+
+Get:1 http://http.kali.org/kali kali-rolling/main arm64 htop arm64 3.3.0-4+b1 [156 kB]
+Fetched 156 kB in 0s (512 kB/s)
+Selecting previously unselected package htop.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 396392 files and directories currently installed.)
+Preparing to unpack .../htop_3.3.0-4+b1_arm64.deb ...
+Unpacking htop (3.3.0-4+b1) ...
+Setting up htop (3.3.0-4+b1) ...
+Processing triggers for kali-menu (2024.4.0) ...
+Processing triggers for desktop-file-utils (0.28-1) ...
+Processing triggers for hicolor-icon-theme (0.18-1) ...
+Processing triggers for man-db (2.13.0-1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...

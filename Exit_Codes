@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Exit code is used to pick up script errors = $?
+package=htop
+#package=notexist
+#>> means redirect to a file or something.
+sudo apt install $package >> install_results.log
+
+if [ $? -eq 0 ]
+then
+    echo "The installation of $package was successful"
+    echo "The new command is available here:"
+    which $package
+else
+    echo "$package failed to install." >> install_failure.log
+fi
