@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Case selection is used to provide options in a multiple situation for user.
+
+echo "Enter a number"
+
+echo "1 - One" 
+echo "2 - Two" 
+echo "3 - Three" 
+echo "4 - Four" 
+echo "5 - Five" 
+
+read distro;
+
+case $distro in
+    1) echo "You've entered one. ";;
+    2) echo "You've entered two. ";;
+    3) echo "You've entered three. ";;
+    4) echo "You've entered four. ";;
+    5) echo "You've entered five. ";;
+    *) echo "You've entered an incorrect option"
+esac

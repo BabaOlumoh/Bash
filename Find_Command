@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#The find command is used to find file or directory on the file system, you can
+#give it criteria to work it
+
+#find /etc -type f
+#> means redirect to null in the directory dev
+
+#find /etc -type f 2> /dev/null
+
+
+#The above find files and redirect any standard error to null
+
+#1: Stanard Output
+#2: Standard Error
+
+#find /etc -type f &2> /dev/null - sends both to the same file
+
+find /etc -type f 1>find_results.txt 2>find_errors.txt

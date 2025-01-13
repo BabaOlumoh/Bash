@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 release_file=/etc/os-release
 logfile=~/Boring_Stuff/Bash/logFiles/updater.log
 errorlog=~/Boring_Stuff/Bash/logFiles/updater_errors.log
