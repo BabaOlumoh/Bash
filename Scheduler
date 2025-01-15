@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#sudo apt install -y at
+#atq - scheduler queue
+#atrm 1 - to remove scheduled job
+#at 18:00 081622 -f ./Scheduler - command time date -f scriptfile
+logfile=job_results.log
+
+echo "The script ran at the following time: $(date)" >> $logfile

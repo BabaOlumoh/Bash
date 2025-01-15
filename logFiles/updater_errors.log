@@ -10,6 +10,12 @@ WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
-setting xserver-xorg-legacy/xwrapper/allowed_users from configuration file
-Error: Setting in Stop via TCSAFLUSH for stdin failed! - tcsetattr (5: Input/output error)
-Error: Setting in Stop via TCSAFLUSH for stdin failed! - tcsetattr (5: Input/output error)
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+

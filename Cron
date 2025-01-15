@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Cron 
+#systemd - learn this 
+#crontab -e
+logfile=cron_results.log
+
+echo "The script ran at $(date)" >>$logfile
