@@ -1,0 +1,21 @@
+#!/bin/bash
+
+commit_message=$(date +%Y-%m-%d)
+branch_name="main"
+
+git init
+
+
+git add --all
+
+git commit -m "$commit_message"
+
+if git diff --quiet && git diff --cached --quiet
+    then
+    echo "No changes to commit. Exiting..."
+    exit 0
+fi
+
+git push
+
+echo "Changes pushed to $branch_name"
