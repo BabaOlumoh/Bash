@@ -1,6 +1,6 @@
 #!/bin/bash
 
-commit_message=$(date +%d-%m%Y)
+commit_message=$(date +%d-%m-%Y)
 branch_name="main"
 
 git init
