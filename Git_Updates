@@ -20,4 +20,4 @@ else
     git_function >$git_result
 fi
 echo "Changes pushed"
-echo "$0 ran at $(date)" >>$runtime
+echo "This script ran at $(date)" >>$runtime
