@@ -2,9 +2,9 @@
 
 commit_message=$(date +%d/%m/%Y)
 diff=$(git diff)
-runtime=~/Boring_Stuff/Bash/Logfiles/Runtimes/"$0_runtime"
-git_result=~/Boring_Stuff/Bash/Logfiles/Results/"$0_results"
-git_error=~/Boring_Stuff/Bash/Logfiles/Errors/"$0_errors"
+runtime=~/Boring_Stuff/Logfiles/Runtimes/"$0_runtime"
+git_result=~/Boring_Stuff/Logfiles/Results/"$0_results"
+git_error=~/Boring_Stuff/Logfiles/Errors/"$0_errors"
 
 git_function(){
 git init
@@ -20,4 +20,4 @@ else
     git_function >$git_result 
 fi
 echo "Changes pushed"
-#echo "$0 script ran at $(date)" >>$runtime
+echo "$0 script ran at $(date)" >>$runtime
