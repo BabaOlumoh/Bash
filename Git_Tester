@@ -12,7 +12,7 @@ diff=$(git diff)
 #echo "Changes pushed to $branch_name"
 #echo "Runtime is $(date)" >>$runtime
 
-if -z "$diff"
+if [[ -z "$diff" ]];
 then
     echo "No"
     exit 0
