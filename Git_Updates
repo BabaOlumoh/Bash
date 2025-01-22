@@ -14,10 +14,10 @@ git push
 }
 if [[ -z "$diff" ]];
 then
-    echo "No changes detected" >git_error
+    echo "No changes detected" >$git_error
     exit 0
 else
-    git_function >git_result
+    git_function >$git_result
 fi
 echo "Changes pushed"
 echo "$0 ran at $(date)" >>$runtime
