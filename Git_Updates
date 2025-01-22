@@ -1,15 +1,23 @@
 #!/bin/bash
 
 commit_message=$(date +%d/%m/%Y)
-branch_name="main"
+diff=$(git diff)
+runtime=~/Boring_Stuff/Bash/Runtimes/"$0_runtime"
+git_result=~/Boring_Stuff/Bash/Logfiles/Results/"$0_results"
+git_error=~/Boring_Stuff/Bash/Logfiles/Errors/"$0_errors"
 
+git_function(){
 git init
-
 git add --all
-
 git commit -m "$commit_message"
-
-
 git push
-
-echo "Changes pushed to $branch_name"
+}
+if [[ -z "$diff" ]];
+then
+    echo "No changes detected" >git_error
+    exit 0
+else
+    git_function >git_result
+fi
+echo "Changes pushed"
+echo "$0 ran at $(date)" >>$runtime

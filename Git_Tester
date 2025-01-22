@@ -2,7 +2,6 @@
 
 commit_message=$(date +%d/%m/%Y)
 branch_name="main"
-monitored_dir=~/Boring_Stuff/Bash
 runtime=~/Boring_Stuff/Logfiles/runtime
 diff=$(git diff)
 #git init
