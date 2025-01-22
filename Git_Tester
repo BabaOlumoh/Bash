@@ -1,0 +1,17 @@
+#!/bin/bash
+
+commit_message=$(date +%d/%m/%Y)
+branch_name="main"
+monitored_dir=~/Boring_Stuff/Bash
+runtime=~/Boring_Stuff/Bash/Logfiles/runtime
+
+while true; do
+inotifywait -q -r -e modify,create,delete,move "$monitored_dir" && \ 
+        echo "Change Detected: $event"
+        echo "Runtime is $(date)" >>$runtime
+        git init
+        git add --all
+        git commit -m "$commit_message"
+	git push
+	echo "Changes pushed to $branch_name"
+done
