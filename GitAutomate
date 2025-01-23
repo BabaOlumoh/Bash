@@ -2,9 +2,9 @@
 
 commit_message=$(date +%d/%m/%Y)
 diff=$(git diff)
-runtime=~/Boring_Stuff/Logfiles/Runtimes/"$0_runtime"
-git_result=~/Boring_Stuff/Logfiles/Results/"$0_results"
-git_error=~/Boring_Stuff/Logfiles/Errors/"$0_errors"
+runtime=~/Boring_Stuff/Logfiles/Runtimes/"$0runtime"
+git_result=~/Boring_Stuff/Logfiles/Results/"$0results"
+git_error=~/Boring_Stuff/Logfiles/Errors/"$0errors"
 
 git_function(){
 git init
