@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 
 commit_message=$(date +%d/%m/%Y)
