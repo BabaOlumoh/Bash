@@ -4,12 +4,12 @@ commit_message=$(date +%d/%m/%Y)
 branch_name="main"
 runtime=~/Boring_Stuff/Logfiles/runtime
 diff=$(git diff)
-#git init
-#git add --all
-#git commit -m "$commit_message"
-#git push
-#echo "Changes pushed to $branch_name"
-#echo "Runtime is $(date)" >>$runtime
+git init
+git add --all
+git commit -m "$commit_message"
+git push
+echo "Changes pushed to $branch_name"
+echo "Runtime is $(date)" >>$runtime
 
 if [[ -z "$diff" ]];
 then
