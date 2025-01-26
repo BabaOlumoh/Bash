@@ -8,7 +8,7 @@ git_error=~/Boring_Stuff/Logfiles/Errors/"$0_errors"
 
 git_function(){
 git init
-git add --all
+git add *
 git commit -m "$commit_message"
 git push 
 }
